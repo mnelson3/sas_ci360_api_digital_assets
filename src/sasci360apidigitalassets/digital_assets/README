@@ -1,0 +1,16 @@
+# Digital Assets
+Contains operations to manage collection of digital assets.
+
+## Get a collection of digital assets
+get_digital_assets(self, **kwargs) -> requests.Response
+
+Returns a collection of digital assets based on the options for pagination, filtering, and sorting. The items in the collection use the application/vnd.sas.marketing.asset.summary media type.
+
+### QUERY PARAMETERS
+1. parent - required, string - The ID of the folder where digital assets are stored in the system. Digital assets are returned only if the parent folder matches this value. Tip: You can use the marketingDigitalAssets/folders endpoint to retrieve the list of folders.
+1. start - optional, integer, Default: 0 - The index of the first digital asset to return. Note: If the Accept header does not specify version 1, this parameter is required.
+1. limit - optional, integer, Default: 50 - The maximum number of digital assets to return. Note: If the Accept header does not specify version 1, this parameter is required.
+
+For Response Information:
+https://support.sas.com/documentation/onlinedoc/ci/ci360-apis/marketingDigitalAssets/v1/redoc.html#operation/getAssets
+
