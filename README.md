@@ -33,25 +33,15 @@ This topic contains the following sections:
  * Customer Intelligence 360 Tenant with Administrative Rights
  * Third-party Content Management System, i.e. Adobe Experience Manager
  * SAS CI360 API Core Library:<br>
-   https://gitlab.sas.com/psd-ci-enablement/sas_ci360_api_core
+   https://github.com/mnelson3/sas_ci360_api_core
 <br><br>
 
 ### Installation
 
-The SAS CI360 API Digital Asset Library is published to a private PyPI registry on GitLab. You will need a
-GitLab deploy token with `read_package_registry` scope for the
-[sas_ci360_api_digital_assets](https://gitlab.sas.com/psd-ci-enablement/sas_ci360_api_digital_assets) project.
-Never commit this token to source control; export it as an environment variable instead.
-
-To install the SAS CI360 API Digital Asset Library:
- 1. Open a terminal window (Unix/macOS) or command prompt (Windows)
- 1. Export your deploy token credentials<br>
-    export GITLAB_PYPI_USER=&lt;your deploy token username&gt;<br>
-    export GITLAB_PYPI_TOKEN=&lt;your deploy token&gt;
- 1. Copy and paste the following line at the cursor<br>
-    pip install sasci360apidigitalassets --extra-index-url "https://${GITLAB_PYPI_USER}:${GITLAB_PYPI_TOKEN}@gitlab.sas.com/api/v4/projects/49195/packages/pypi/simple"
- 1. Press "Enter"<br>
-    The SAS CI360 API Digital Asset Library should install
+To install the SAS CI360 API Digital Asset Library from a clone of this repository:
+ 1. `git clone https://github.com/mnelson3/sas_ci360_api_digital_assets.git`
+ 1. `cd sas_ci360_api_digital_assets`
+ 1. `pip install .`
 <br><br>
 
 ### Getting Started
@@ -75,24 +65,18 @@ While this library is available for review, please note that it is considered a 
 For issues specific to sasci360apicore or sasci360apidigitalasset try updating the libraries.
 
 To update sasci360apicore:
- 1. Open a terminal window (Unix/macOS) or command prompt (Windows)
+ 1. Pull the latest changes from a clone of the [sas_ci360_api_core](https://github.com/mnelson3/sas_ci360_api_core) repository
+ 1. Open a terminal window (Unix/macOS) or command prompt (Windows) in that clone
  1. Copy and paste the following line at the cursor<br>
-    pip uninstall sasci360apicore
- 1. Press "Enter"<br>
-    The SAS CI360 API Core Library should uninstall
- 1. Copy and paste the following line at the cursor<br>
-    pip install sasci360apicore --extra-index-url "https://${GITLAB_PYPI_USER}:${GITLAB_PYPI_TOKEN}@gitlab.sas.com/api/v4/projects/35734/packages/pypi/simple"
+    pip install --upgrade .
  1. Press "Enter"<br>
     The SAS CI360 API Core Library should install
 
 To update sasci360apidigitalasset:
- 1. Open a terminal window (Unix/macOS) or command prompt (Windows)
+ 1. Pull the latest changes from a clone of this repository
+ 1. Open a terminal window (Unix/macOS) or command prompt (Windows) in that clone
  1. Copy and paste the following line at the cursor<br>
-    pip uninstall sasci360apidigitalasset
- 1. Press "Enter"<br>
-    The SAS CI360 API Digital Asset Library should uninstall
- 1. Copy and paste the following line at the cursor<br>
-    pip install sasci360apidigitalassets --extra-index-url "https://${GITLAB_PYPI_USER}:${GITLAB_PYPI_TOKEN}@gitlab.sas.com/api/v4/projects/49195/packages/pypi/simple"
+    pip install --upgrade .
  1. Press "Enter"<br>
     The SAS CI360 API Digital Asset Library should install
 <br><br>
