@@ -2,6 +2,8 @@
 
 ## SAS 360 API DIGITAL ASSETS LIBRARY
 
+> **Status: superseded.** This library has been replaced by [`sas-ci360-sol-content-delivery`](https://github.com/mnelson3/sas-ci360-sol-content-delivery) — the same Digital Assets API, rebuilt with mockable unit tests, typed exceptions, and safer configuration defaults. This repo is kept for historical reference; start new work in `sas-ci360-sol-content-delivery` instead.
+
 ### Overview
 
 The Digital Assets API provides resources for accessing the digital assets and related features in SAS Customer Intelligence 360. For example, you could use the Assets API to create and manage instances of asset resources like digital assets, folders, renditions, and revisions.
