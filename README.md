@@ -2,7 +2,7 @@
 
 ## SAS 360 API DIGITAL ASSETS LIBRARY
 
-> **Status: superseded.** This library has been replaced by [`sas-ci360-sol-content-delivery`](https://github.com/mnelson3/sas-ci360-sol-content-delivery) — the same Digital Assets API, rebuilt with mockable unit tests, typed exceptions, and safer configuration defaults. This repo is kept for historical reference; start new work in `sas-ci360-sol-content-delivery` instead.
+> **Status: superseded.** This library has been replaced by [`sas-ci360-sol-content-delivery`](https://github.com/mnelson3/sas-ci360-sol-content-delivery) — the same Digital Assets API, rebuilt with mockable unit tests, typed exceptions, and safer configuration defaults. This repo is kept for historical reference; start new work in `sas-ci360-sol-content-delivery` instead. This repo's final implementation is frozen at the `archive/superseded` branch.
 
 ### Overview
 
